@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vaishnavi Ghode — Frontend Developer</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+    :root{
+  --bg:#f5f5f5;   /* very light gray background */
+  --card:#ffffff; /* keep cards white for contrast */
+  --text:#333333; /* darker text for readability */
+  --muted:#666666;
+  --primary:#7c4dff;
+  --primary-600:#6b3cff;
+  --border:#dddddd;
+  --white:#ffffff;
+}
+
+    *{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:Inter, sans-serif;
+}
+
+    .container{max-width:1100px;margin:0 auto;padding:0 24px;}
+
+    header{border-bottom:1px solid var(--border);padding:16px 0;}
+    .nav{display:flex;justify-content:space-between;align-items:center;}
+    .brand{font-family:Poppins;font-weight:700;}
+    .brand-dot{width:10px;height:10px;border-radius:50%;background:var(--primary);display:inline-block;margin-left:6px;}
+    .nav-links{display:flex;gap:20px;}
+    .nav-links a{color:var(--muted);text-decoration:none;}
+    .nav-links a:hover{color:var(--text);}
+    .talk-btn{background:var(--primary);color:var(--white);padding:8px 14px;border-radius:8px;text-decoration:none;}
+
+    .hero{padding:64px 0;}
+    .hero-card{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;}
+    .title{font-family:Poppins;font-size:42px;font-weight:700;margin:0;}
+    .subtitle{color:var(--primary);font-weight:700;margin:8px 0;}
+    .desc{color:var(--muted);margin-bottom:20px;}
+    .cta{display:flex;gap:12px;margin-bottom:20px;}
+    .btn{padding:10px 16px;border-radius:8px;font-weight:600;text-decoration:none;}
+    .btn-primary{background:var(--primary);color:var(--white);}
+    .btn-outline{border:1px solid var(--border);color:var(--text);}
+    .social{display:flex;gap:12px;}
+    .social a{color:var(--muted);font-size:18px;text-decoration:none;}
+    .social a:hover{color:var(--white);}
+    .portrait img{width:100%;border-radius:12px;}
+
+    section{padding:48px 0;}
+    .section-title{font-family:Poppins;font-size:28px;font-weight:700;margin-bottom:12px;}
+    .section-desc{color:var(--muted);margin-bottom:24px;}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;}
+    .card{background:var(--card);padding:20px;border-radius:12px;}
+
+    footer{border-top:1px solid var(--border);padding:20px;text-align:center;color:var(--muted);}
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <div class="brand">Vaishnavi<span class="brand-dot"></span></div>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+          <a class="talk-btn" href="#contact">Let’s Talk</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="home" class="hero">
+    <div class="container">
+      <div class="hero-card">
+        <div>
+          <h1 class="title">Vaishnavi Ghode</h1>
+          <h2 class="subtitle">Frontend Developer</h2>
+          <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore et officiis suscipit ut assumenda libero tenetur expedita eaque, quaerat quasi.</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="#contact">Hire Me</a>
+            <a class="btn btn-outline" href="#portfolio">See Projects</a>
+          </div>
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <div class="portrait">
+          <img src="images/ID_MY_image .jpeg" alt="Portrait of Vaishnavi Ghode">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <h3 class="section-title">About Me</h3>
+      <p class="section-desc">I build fast, accessible interfaces with modern tooling—focused on clean design, performance, and delightful UX.</p>
+      <div class="grid">
+        <div class="card">HTML, CSS, JavaScript, React, Next.js</div>
+        <div class="card">5+ years of experience building web apps</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio">
+    <div class="container">
+      <h3 class="section-title">Portfolio</h3>
+      <p class="section-desc">Some of my recent projects.</p>
+      <div class="grid">
+        <div class="card">Project 1</div>
+        <div class="card">Project 2</div>
+        <div class="card">Project 3</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section id="certificate">
+    <div class="container">
+      <h3 class="section-title">certificate</h3>
+      <p class="section-desc">all my certificates</p>
+      <div class="grid">
+        <div class="card">Post 1</div>
+        <div class="card">Post 2</div>
+        <div class="card">Post 3</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h3 class="section-title">Contact</h3>
+      <p class="section-desc">Got a project or role in mind? Let’s talk.</p>
+      <form>
+        <input type="text" placeholder="Your name" required>
+        <input type="email" placeholder="Email address" required>
+        <textarea placeholder="Tell me about your project" required></textarea>
+        <button class="btn btn-primary" type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Vaishnavi Ghode. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
